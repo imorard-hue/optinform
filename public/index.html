@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Suscripción</title>
+</head>
+<body>
+  <h1>Suscribite a nuestras novedades</h1>
+  <form action="/api/subscribe" method="POST">
+    <label>Nombre:</label><br>
+    <input type="text" name="nombre" placeholder="Tu nombre"><br><br>
+    <label>Email:</label><br>
+    <input type="email" name="email" placeholder="tu@email.com" required><br><br>
+    <label>
+      <input type="checkbox" name="consentimiento" required>
+      Acepto recibir comunicaciones.
+    </label><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
